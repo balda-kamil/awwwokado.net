@@ -1,0 +1,10 @@
+.header_wrapper img{
+  padding: 0 20px;
+}
+
+.header_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
