@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Menu.css';
+import MenuContent from './MenuContent/MenuContent'
 
 class Menu extends Component{
   constructor(props){
@@ -22,19 +23,11 @@ class Menu extends Component{
         <div className={ "stick stick-1 " + (this.state.isActive ? 'open_menu close_menu' : 'open_menu')}></div>
         <div className={ "stick stick-2 " + (this.state.isActive ? 'open_menu close_menu' : 'open_menu')}></div>
         <div className={ "stick stick-3 " + (this.state.isActive ? 'open_menu close_menu' : 'open_menu')}></div>
-        {
-        this.state.isActive === false && 
-          <div className="menu__expanded">
-            <ul>
-              <li>HOME</li>
-              <li>OFERTA</li>
-              <li>ZREALIZOWANE PROJEKTY</li>
-              <li>OPINIE KLIENTÓW</li>
-              <li>KONTAKT</li>
-            </ul>
-          </div>
-        }
       </div>
+      {
+        this.state.isActive === false && 
+          <MenuContent/>
+        }
       </>
     )
   }

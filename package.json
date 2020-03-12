@@ -9,7 +9,9 @@
     "bootstrap": "^4.4.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-particles-js": "^2.7.1",
+    "react-scripts": "3.4.0",
+    "react-transition-group": "1.x"
   },
   "scripts": {
     "start": "react-scripts start",
