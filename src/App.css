@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
+
 .container{
   max-width: 1520px!important;
 }
@@ -8,4 +10,13 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  color: #10256F;
+}
+
+footer p, h1, h2, h3, h4, h5, h6{
+  color: #fff
 }

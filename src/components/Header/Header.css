@@ -1,5 +1,10 @@
+header p, h1, h2, h3, h4, h5, h6{
+  color: #FFF;
+}
+
 .header_wrapper img{
   padding: 0 20px;
+  z-index: 100;
 }
 
 .header_wrapper{
@@ -7,4 +12,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media all and (max-width: 550px){
+  .header_wrapper img{
+    max-width: 240px;
+  }
 }

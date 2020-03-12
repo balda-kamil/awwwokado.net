@@ -6,7 +6,7 @@ import Menu from './Menu/Menu'
 const Header = () => {
   return(
     <div className="header_wrapper">
-      <img src={Logo} ale="aWWWokado logo"/>
+      <img src={Logo} alt="aWWWokado logo"/>
       <Menu/>
     </div>
   )
