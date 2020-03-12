@@ -24,10 +24,7 @@ class Menu extends Component{
         <div className={ "stick stick-2 " + (this.state.isActive ? 'open_menu close_menu' : 'open_menu')}></div>
         <div className={ "stick stick-3 " + (this.state.isActive ? 'open_menu close_menu' : 'open_menu')}></div>
       </div>
-      {
-        this.state.isActive === false && 
-          <MenuContent/>
-        }
+        <MenuContent />
       </>
     )
   }
