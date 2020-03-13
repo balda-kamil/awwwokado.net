@@ -9,15 +9,18 @@ function Menu(){
 
   const fade = useSpring({
     opacity: isActive ? 0 : 1,
+    visibility: isActive ? "hidden" : "visible"
   })
 
   return(
     <>
-    <div className="menu__hamburger_container" onClick={() => setActive(!isActive)}>
-      <div className={ "stick stick-1 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
-      <div className={ "stick stick-2 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
-      <div className={ "stick stick-3 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
-    </div>
+      <a className="z-100" onClick={() => setActive(!isActive)}>
+        <div className="menu__hamburger_container" >
+          <div className={ "stick stick-1 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
+          <div className={ "stick stick-2 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
+          <div className={ "stick stick-3 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
+        </div>
+      </a>
       <animated.div style={fade} className="menu__expanded">
         <MenuContent />
       </animated.div>

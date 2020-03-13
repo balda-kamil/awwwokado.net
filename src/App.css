@@ -10,6 +10,8 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
 p{
@@ -19,4 +21,18 @@ p{
 
 footer p, h1, h2, h3, h4, h5, h6{
   color: #fff
+}
+
+.btn-big{
+  margin-top: 70px;
+  padding: 15px 60px;
+  width: 300px;
+  border: none;
+  color: #fff;
+  background-color: #EE4AF1;
+  font-size: 14px
+}
+
+.justify-center{
+  justify-content: center;
 }
