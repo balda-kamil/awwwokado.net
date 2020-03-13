@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import Offer from './components/Offer/Offer'
 
 function App() {
   return (
+    <>
     <div className="hero">
       <div className="container">
         <header className="row header">
@@ -17,6 +19,12 @@ function App() {
         </section>
       </div>
     </div>
+    <div className="container">
+      <div className="row">
+        <Offer/>
+      </div>
+    </div>
+    </>
   );
 }
 

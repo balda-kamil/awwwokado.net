@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900&display=swap&subset=latin-ext');
+
+body{
+  font-family: 'Lato', sans-serif;
+}
 
 .container{
   max-width: 1520px!important;
@@ -11,12 +15,6 @@
   background-position: top right;
   background-size: cover;
   color: #fff;
-  font-family: 'Lato', sans-serif;
-}
-
-p{
-  font-family: 'Lato', sans-serif;
-  color: #10256F;
 }
 
 footer p, h1, h2, h3, h4, h5, h6{
@@ -35,4 +33,47 @@ footer p, h1, h2, h3, h4, h5, h6{
 
 .justify-center{
   justify-content: center;
+}
+
+.section-padding{
+  padding: 100px 0;
+}
+
+.__bold-title{
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.__light-subtitle{
+  font-weight: 100;
+  font-size: 54px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+}
+
+.__paragraph-normal{
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.mt-70{
+  margin-top: 70px;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.fw-100{
+  font-weight: 100;
+}
+
+.mt-40{
+  margin-top: 40px;
 }

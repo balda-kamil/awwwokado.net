@@ -8,8 +8,10 @@ function Menu(){
   const [isActive, setActive] = useState(true)
 
   const fade = useSpring({
-    opacity: isActive ? 0 : 1,
-    visibility: isActive ? "hidden" : "visible"
+    config: { duration: 200 },
+    config: { easing: 'ease-in' },
+    transform: isActive ? 'scale(0)' : 'scale(1)',
+    opacity: isActive ? 0 : 1
   })
 
   return(
@@ -21,7 +23,7 @@ function Menu(){
           <div className={ "stick stick-3 " + (isActive ? 'open_menu close_menu' : 'open_menu')}></div>
         </div>
       </a>
-      <animated.div style={fade} className="menu__expanded">
+      <animated.div config={{duration: 200}} style={fade} className="menu__expanded">
         <MenuContent />
       </animated.div>
     </>
