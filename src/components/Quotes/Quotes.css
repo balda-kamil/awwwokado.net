@@ -1,0 +1,28 @@
+.quote__wrapper{
+  flex-basis: 25%;
+  padding: 0 40px;
+  margin-right: 40px;
+}
+
+.quote__wrapper img{
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 40px;
+}
+
+.quote_paragraph{
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 24px;
+  color: #10256F
+}
+
+.quote_author{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #10256F;
+  text-align: right;
+  max-width: 150px;
+  margin: 0 0 0 auto;
+}

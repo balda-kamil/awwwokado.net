@@ -26,7 +26,8 @@ function App() {
       </div>
     </div>
     <div className="container">
-      <div className="row">
+      <h2 className="t-center color-blue mb-100"><span className="__bold-title">KLIENCI </span><span className="__light-subtitle">o nas</span></h2>
+      <div className="row justify-center">
         <Quotes/>
       </div>
     </div>

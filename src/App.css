@@ -8,6 +8,13 @@ body{
   max-width: 1520px!important;
 }
 
+.color-blue{
+  color: #10256F
+}
+.t-center{
+  text-align: center;
+}
+
 .hero{
   min-height: 100vh;
   background-image: url('./media/hero_bg.jpg');
@@ -76,6 +83,10 @@ footer p, h1, h2, h3, h4, h5, h6{
 
 .mt-40{
   margin-top: 40px;
+}
+
+.mb-100{
+  margin-bottom: 100px
 }
 
 .m-0-auto{
