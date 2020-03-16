@@ -1,6 +1,8 @@
 import React from 'react';
 import './Offer.css';
 
+import OfferMovie from './OfferMovie/OfferMovie'
+
 import expIco from './../../media/experience.png'
 import helpIco from './../../media/help.png'
 import comIco from './../../media/communication.png'
@@ -31,6 +33,7 @@ function Offer(){
           <p className="fw-100">Jesteśmy firmą która słucha wizji swoich klientów, aby byla ona zgodna z naszą. Każdą stronę czy platformę tworymy od podstaw, dopasowaną pod Ciebie.</p>
         </div>
       </div>
+      <OfferMovie/>
     </div>
   )
 }
