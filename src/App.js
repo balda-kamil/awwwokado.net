@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Offer from './components/Offer/Offer'
+import Quotes from './components/Quotes/Quotes'
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
     <div className="container">
       <div className="row">
         <Offer/>
+      </div>
+    </div>
+    <div className="container">
+      <div className="row">
+        <Quotes/>
       </div>
     </div>
     </>

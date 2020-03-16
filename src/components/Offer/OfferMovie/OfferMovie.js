@@ -16,24 +16,30 @@ class OfferMovie extends React.Component{
   handlePlayVideo = () => {
     const viewPortheight = document.documentElement.clientHeight
     const height = document.getElementById('offer_anim').offsetHeight;
-    const offset = document.getElementById('offer__movie').offsetTop;
+    const video = document.getElementById('offer__movie')
+    const offset = video.offsetTop;
     const momentWhenPlay = offset + (height / 1.5)
 
-    // (momentWhenPlay >= (window.pageYOffset + viewPortheight)) && "start filmiku";
-    if(momentWhenPlay <= (window.pageYOffset + viewPortheight)){
-      console.log(momentWhenPlay)
-      console.log('leci')
+    if(momentWhenPlay <= (window.pageYOffset + viewPortheight) && this.state.moviePlay === false){
+      console.log('start filmiku')
+      this.setState({ 
+        moviePlay: true
+      })
+      video.play()
     }
-
-    console.log(height, offset)
-    console.log(window.pageYOffset + viewPortheight)
-
   }
 
   render(){ 
     return(
       <div id="offer_anim" className="m-0-auto">
-        <video id="offer__movie" src={ MovieAnimation } type="video/mp4" className="offer__movie"></video>
+        <video 
+          ref="awwwwokado_video"
+          id="offer__movie" 
+          src={ MovieAnimation } 
+          type="video/mp4" 
+          className="offer__movie"
+          muted="muted"
+        />
       </div>
     )
   }
