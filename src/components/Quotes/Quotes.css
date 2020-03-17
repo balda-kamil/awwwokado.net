@@ -7,10 +7,11 @@
 .quote__wrapper img{
   display: block;
   max-width: 150px;
-  margin: 0 auto 40px;
+  margin: 0 auto 80px;
 }
 
 .quote_paragraph{
+  position: relative;
   font-weight: 100;
   font-size: 18px;
   line-height: 24px;
@@ -25,4 +26,15 @@
   text-align: right;
   max-width: 150px;
   margin: 0 0 0 auto;
+}
+
+.quote_paragraph::before {
+  width: 40px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  content: "";
+  background-image: url("https://awwwokado.net/_media/quote.png");
+  height: 32px;
+  background-size: contain;
 }

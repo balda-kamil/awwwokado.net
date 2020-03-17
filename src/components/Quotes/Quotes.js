@@ -13,7 +13,7 @@ function Quotes(){
       key: 2,
       imgUrl: 'https://awwwokado.net/persons/maciekh.png',
       quote: 'Współpraca z firmą aWWWokado przebiegła bardzo profesjonalnie. Dzięki głebokiemu zrozumieniu naszych oczekiwań oraz proaktywnemu sugerowaniu lepszych rozwiązań udało się stworzyć stronę, która działa szybko i sprawnie.',
-      name: 'Maciej Hoffman ca30.pl'
+      name: 'Maciej Hoffmann ca30.pl'
     },
     {
       key: 3,

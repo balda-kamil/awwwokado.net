@@ -21,6 +21,7 @@ body{
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -85,10 +86,39 @@ footer p, h1, h2, h3, h4, h5, h6{
   margin-top: 40px;
 }
 
+.mb-40{
+  margin-bottom: 40px!important
+}
+
 .mb-100{
   margin-bottom: 100px
 }
 
 .m-0-auto{
   margin: 0 auto;
+}
+
+.m-0{
+  margin: 0!important;
+}
+
+.logos-row{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-row img{
+  max-width: 300px;
+  max-height: 90px;
+  margin: 20px 40px
+}
+
+a{
+  text-decoration: none!important;
+}
+
+.space-beetween{
+  justify-content: space-between;
 }

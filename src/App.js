@@ -4,6 +4,8 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Offer from './components/Offer/Offer'
 import Quotes from './components/Quotes/Quotes'
+import Logos from './components/Logos/Logos'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -20,17 +22,27 @@ function App() {
         </section>
       </div>
     </div>
-    <div className="container">
+    <section className="container">
       <div className="row">
         <Offer/>
       </div>
-    </div>
-    <div className="container">
+    </section>
+    <section className="container">
       <h2 className="t-center color-blue mb-100"><span className="__bold-title">KLIENCI </span><span className="__light-subtitle">o nas</span></h2>
       <div className="row justify-center">
         <Quotes/>
       </div>
-    </div>
+    </section>
+    <section className="container">
+      <div className="row logos-row">
+        <Logos/>
+      </div>
+    </section>
+    <footer className="background">
+      <div className="container">
+        <Footer/>
+      </div>
+    </footer>
     </>
   );
 }
