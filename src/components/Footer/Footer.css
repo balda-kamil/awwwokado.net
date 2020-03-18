@@ -23,5 +23,28 @@ footer{
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 4px;
+}
+
+.footer__address p{
   text-align: right;
+}
+
+.footer__button{
+  margin: 0
+}
+
+
+@media all and (max-width: 768px){
+  .footer__container{
+    flex-direction: column;
+  }
+  .footer__address{
+    margin-top: 40px;
+  }
+  .footer__address p{
+    text-align: left;
+  }
+  .footer__button{
+    margin: 40px 0 0 0;
+  }
 }

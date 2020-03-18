@@ -48,6 +48,7 @@ footer p, h1, h2, h3, h4, h5, h6{
 }
 
 .__bold-title{
+  text-align: center;
   font-weight: 900;
   letter-spacing: 1.4px;
   font-size: 72px;
@@ -55,6 +56,7 @@ footer p, h1, h2, h3, h4, h5, h6{
 }
 
 .__light-subtitle{
+  text-align: center;
   font-weight: 100;
   font-size: 54px;
   line-height: 60px;
@@ -62,12 +64,17 @@ footer p, h1, h2, h3, h4, h5, h6{
 }
 
 .__paragraph-normal{
+  text-align: center;
   font-size: 32px;
   line-height: 40px;
 }
 
 .mb-30{
   margin-bottom: 30px;
+}
+
+.plr-10{
+  padding: 0 10px;
 }
 
 .mt-70{
@@ -110,7 +117,7 @@ footer p, h1, h2, h3, h4, h5, h6{
 }
 
 .logos-row img{
-  max-width: 300px;
+  max-width: 200px;
   max-height: 90px;
   margin: 20px 40px
 }
@@ -121,4 +128,72 @@ a{
 
 .space-beetween{
   justify-content: space-between;
+}
+
+.ta-right{
+  text-align: right;
+}
+
+.pt-100{
+  padding-top: 100px;
+}
+
+@media all and (max-width: 1200px){
+  .__bold-title{
+    font-size: 56px;
+    line-height: 62px;
+  }
+  
+  .__light-subtitle{
+    font-size: 42px;
+    line-height: 48px;
+  }
+  
+  .__paragraph-normal{
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media all and (max-width: 991px){
+  .__bold-title{
+    font-size: 46px;
+    line-height: 52px;
+  }
+  
+  .__light-subtitle{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .__paragraph-normal{
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media all and (max-width: 768px){
+  .__bold-title{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .__light-subtitle{
+    font-size: 28px;
+    line-height: 33px;
+  }
+  
+  .__paragraph-normal{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .btn-big{
+    margin-top: 70px;
+    padding: 15px 60px;
+    width: 250px;
+    border: none;
+    color: #fff;
+    background-color: #EE4AF1;
+    font-size: 14px
+  }
 }
