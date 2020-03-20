@@ -13,7 +13,7 @@ function Offer(){
     <>
       <div className="offer pt-100">
         <div className="offer__left_item">
-          <h2 className="__light-subtitle">APLIKACJE, STRONY, SKLEPY, PORTALE</h2>
+          <h2 className="__light-subtitle color-blue">APLIKACJE, STRONY, SKLEPY, PORTALE</h2>
           <p className="__paragraph-normal mt-40">działające szybko, responsywne, miłe dla oka</p>
           <button className="btn-big mt-40">NAPISZ DO NAS</button>
         </div>

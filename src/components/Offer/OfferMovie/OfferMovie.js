@@ -1,4 +1,4 @@
-import React, { Xomponent } from 'react';
+import React from 'react';
 import './OfferMovie.css';
 import MovieAnimation from './../../../media/rwdanimation.mp4'
 
@@ -15,13 +15,12 @@ class OfferMovie extends React.Component{
 
   handlePlayVideo = () => {
     const viewPortheight = document.documentElement.clientHeight
-    const height = document.getElementById('offer_anim').offsetHeight;
+    const height = document.getElementById('oferta').offsetHeight;
     const video = document.getElementById('offer__movie')
     const offset = video.offsetTop;
     const momentWhenPlay = offset + (height / 1.5)
 
     if(momentWhenPlay <= (window.pageYOffset + viewPortheight) && this.state.moviePlay === false){
-      console.log('start filmiku')
       this.setState({ 
         moviePlay: true
       })
@@ -31,7 +30,7 @@ class OfferMovie extends React.Component{
 
   render(){ 
     return(
-      <div id="offer_anim" className="m-0-auto">
+      <div id="oferta" className="m-0-auto">
         <video 
           ref="awwwwokado_video"
           id="offer__movie" 

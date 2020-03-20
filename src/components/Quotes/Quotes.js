@@ -27,7 +27,7 @@ function Quotes(){
       {quotes.map(x => {
         return (
           <div key={x.key} className="quote__wrapper">
-            <img src={x.imgUrl} alt="author photo"/>
+            <img src={x.imgUrl} alt="author"/>
             <p className="quote_paragraph">{x.quote}</p>
             <p className="quote_author">{x.name}</p>
           </div>
