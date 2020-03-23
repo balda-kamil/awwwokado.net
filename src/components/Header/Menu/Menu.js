@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Menu.css';
 import { Link, animateScroll as scroll } from "react-scroll";
-// import { Link } from "react-router-dom";
 
 import { useSpring, animated }  from 'react-spring'
 

@@ -115,6 +115,11 @@ footer p, h1, h2, h3, h4, h5, h6, a{
   margin: 0!important;
 }
 
+.ptb-20{
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
 .logos-row{
   margin-top: 70px;
   margin-bottom: 70px;
