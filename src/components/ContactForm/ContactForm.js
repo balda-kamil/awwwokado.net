@@ -1,8 +1,8 @@
 import React from 'react'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import * as emailjs from 'emailjs-com'
 import './ContactForm.css'
+import * as emailjs from 'emailjs-com'
 
 function ContactForm({
   errors,
@@ -24,13 +24,12 @@ function ContactForm({
             <p className="mb-0 light-red">{ touched.name && errors.name && errors.name }</p>
           </div>
         </div>
-        
-          <div>
-            <Field component="textarea" name="textarea" placeholder="Treść wiadomości" />
-            <p className="mb-0 light-red">{ touched.textarea && errors.textarea && errors.textarea } </p>
-          </div>
-          <p className="color-blue mb-0">{ status && status.success && "Dziękujemy za wiadomość, skontaktujemy się!"}</p>
-          <button className="btn-big mt-small w-100 mt-0" type="submit">{ isSubmitting ? <div className="lds-dual-ring"></div> : "Wyślij"}</button>
+        <div>
+          <Field component="textarea" name="textarea" placeholder="Treść wiadomości" />
+          <p className="mb-0 light-red">{ touched.textarea && errors.textarea && errors.textarea } </p>
+        </div>
+        <p className="color-blue mb-0">{ status && status.success && "Dziękujemy za wiadomość, skontaktujemy się!"}</p>
+        <button className="btn-big mt-small w-100 mt-0" type="submit">{ isSubmitting ? <div className="lds-dual-ring"></div> : "Wyślij"}</button>
       </Form>
       </div>
     </div>
