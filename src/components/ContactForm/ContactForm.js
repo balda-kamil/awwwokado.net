@@ -59,7 +59,8 @@ const FormikContactForm = withFormik({
       from_name: name,
       to_name: 'kamil@awwwokado.net',
       subject: 'nowa wiadomosc ze strony awwwokado.net',
-      message_html: textarea
+      email: email,
+      message_html: `${textarea} <br/> ${email}`
     }
 
     emailjs.send(
