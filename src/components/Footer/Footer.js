@@ -8,8 +8,8 @@ import Logo from './../../media/logo_small.png'
 function Footer(){
   return(
     <>
-      <div className="row">
-        <div className="col-lg-4 col-md-3 col-sm-6">
+      <div className="row contact__container">
+        <div className="col-lg-5 col-md-4 col-sm-12">
           <img src={Logo} alt="awwwokado logo"/>
           <div className="plr-10">
           <p className="footer__p">Kamil Balda</p>

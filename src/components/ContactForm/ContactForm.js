@@ -11,10 +11,10 @@ function ContactForm({
   status
 }){
   return(
-    <div className="form__wrapper col-lg-8 col-md-9 col-sm-6">
+    <div className="form__wrapper col-lg-7 col-md-8 col-sm-12">
       <div className="form__backplate">
       <Form>
-        <div className="d-flex">
+        <div className="d-flex_my">
           <div>
             <Field type="email" name="email" placeholder="E-mail" />
             <p className="mb-0 light-red">{ touched.email && errors.email && errors.email }</p>

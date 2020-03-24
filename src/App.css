@@ -138,6 +138,10 @@ footer p, h1, h2, h3, h4, h5, h6, a{
   margin: 20px 40px
 }
 
+.d-flex_my{
+  display: flex;
+}
+
 a{
   text-decoration: none!important;
 }
@@ -223,5 +227,8 @@ a{
     color: #fff;
     background-color: #EE4AF1;
     font-size: 14px
+  }
+  .contact__container{
+    flex-direction: column-reverse;
   }
 }

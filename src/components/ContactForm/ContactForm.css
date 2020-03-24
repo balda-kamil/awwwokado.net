@@ -7,6 +7,7 @@
 
 .form__backplate{
   background: #fff;
+  max-width: 100%;
 }
 
 .form__backplate p{
@@ -61,7 +62,7 @@ button:focus{
 }
 
 .lds-dual-ring {
-  display: inline-block;
+  display: inline-block!important;
   width: 20px;
   height: 20px;
 }
@@ -82,5 +83,36 @@ button:focus{
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 768px){
+  .form__backplate{
+    display: flex;
+    flex-direction: column;
+  }
+  .form__backplate form div{
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 568px){
+  .form__backplate{
+    width: 80%;
+  }
+  .form__backplate form div{
+    display: block;
+  }
+  .form__backplate form div:nth-child(2) input{
+    margin-top: 0
+  }
+  .form__backplate form div input{
+    width: -webkit-fill-available;
+  }
+}
+
+@media all and (max-width: 400px){
+  .form__backplate{
+    width: 95%;
   }
 }
