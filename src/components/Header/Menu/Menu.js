@@ -7,6 +7,8 @@ import { useSpring, animated }  from 'react-spring'
 function Menu(){
   const [isActive, setActive] = useState(true)
 
+  !isActive ? document.body.style.overflow = "hidden" : document.body.style.overflow = "unset"
+
   const fade = useSpring({
     config: { duration: 200 },
     config: { easing: 'ease-in' },

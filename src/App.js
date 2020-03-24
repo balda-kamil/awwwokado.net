@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css'
 import Main from './components/Main/Main'
 
-import ContactForm from './components/ContactForm/ContactForm'
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +14,6 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={ Main }/>
-        <Route path="/formularz" component={ ContactForm }/>
       </Switch>
     </Router>
     </>

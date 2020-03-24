@@ -11,25 +11,27 @@ function ContactForm({
   status
 }){
   return(
-    <div className="form__wrapper">
+    <div className="form__wrapper col-lg-8 col-md-9 col-sm-6">
       <div className="form__backplate">
       <Form>
-        <div>
-          <Field type="email" name="email" placeholder="E-mail" />
-          <p className="mb-0">{ touched.email && errors.email && errors.email }</p>
+        <div className="d-flex">
+          <div>
+            <Field type="email" name="email" placeholder="E-mail" />
+            <p className="mb-0 light-red">{ touched.email && errors.email && errors.email }</p>
+          </div>
+          <div>
+            <Field type="name" name="name" placeholder="Imię" />
+            <p className="mb-0 light-red">{ touched.name && errors.name && errors.name }</p>
+          </div>
         </div>
-        <div>
-          <Field type="name" name="name" placeholder="Imię" />
-          <p className="mb-0">{ touched.name && errors.name && errors.name }</p>
-        </div>
-        <div>
-          <Field component="textarea" name="textarea" placeholder="Treść wiadomości" />
-          <p className="mb-0">{ touched.textarea && errors.textarea && errors.textarea } </p>
-        </div>
-
-        <button className="btn-big mt-small" type="submit">{ isSubmitting ? <div className="lds-dual-ring"></div> : "Wyślij"}</button>
-        </Form>
-        { status && status.success && <p className="color-blue mb-0 ptb-20">Dziękujemy za wiadomość, skontaktujemy się!</p>}
+        
+          <div>
+            <Field component="textarea" name="textarea" placeholder="Treść wiadomości" />
+            <p className="mb-0 light-red">{ touched.textarea && errors.textarea && errors.textarea } </p>
+          </div>
+          <p className="color-blue mb-0">{ status && status.success && "Dziękujemy za wiadomość, skontaktujemy się!"}</p>
+          <button className="btn-big mt-small w-100 mt-0" type="submit">{ isSubmitting ? <div className="lds-dual-ring"></div> : "Wyślij"}</button>
+      </Form>
       </div>
     </div>
   )

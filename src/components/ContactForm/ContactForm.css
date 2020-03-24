@@ -7,12 +7,15 @@
 
 .form__backplate{
   background: #fff;
-  max-width: 800px;
 }
 
 .form__backplate p{
-  margin-left: 30px;
+  height: 16px;
+  margin-left: 20px;
   font-size: 12px;
+}
+
+.light-red{
   color: #ff3f34!important
 }
 
@@ -31,31 +34,42 @@ button:focus{
   outline: 0!important
 }
 
+.w-100{
+  width: 100%
+}
+
 .form__backplate form input,
 .form__backplate form textarea{
-  margin: 20px auto 0;
-  width: 80%;
   background: #eee;
   border: 1px solid #fff;
-  padding: 10px;
   border-radius: 8px;
   display: block;
+  padding: 10px
+}
+
+.form__backplate form input{
+  margin: 20px 20px 0 20px;
+}
+
+.form__backplate form textarea{
+  margin: 0 20px 0 20px;
 }
 
 .form__backplate form textarea{
   min-height: 140px;
+  width: calc(100% - 40px);
 }
 
 .lds-dual-ring {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin: 4px;
   border-radius: 50%;
   border: 3px solid #fff;

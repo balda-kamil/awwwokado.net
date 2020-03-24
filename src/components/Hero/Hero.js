@@ -1,12 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
-
-import ContactForm from '../ContactForm/ContactForm';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Hero(){
   return(
@@ -14,10 +9,13 @@ function Hero(){
       <h1 className="__bold-title">APLIKACJE I STRONY WWW</h1>
       <h2 className="__light-subtitle">STWORZONE POD TWOJE POTRZEBY</h2>
       <p className="__paragraph-normal">Spełniające najnowsze standardy i wymagania</p>
-      <Link to="/formularz">
-        <button className="btn-big">JAK MOŻEMY CI POMÓC?</button>
+      <Link to="offer"  
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration= {500}>
+        <button className="btn-big">SPRAWDŹ NAS</button>
       </Link>
-      <Router path="formularz" component={ContactForm}/>
     </div>
   )
 }

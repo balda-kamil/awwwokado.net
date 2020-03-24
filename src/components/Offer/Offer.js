@@ -7,6 +7,7 @@ import expIco from './../../media/experience.png'
 import helpIco from './../../media/help.png'
 import comIco from './../../media/communication.png'
 
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Offer(){
   return(
@@ -15,13 +16,19 @@ function Offer(){
         <div className="offer__left_item">
           <h2 className="__light-subtitle color-blue">APLIKACJE, STRONY, SKLEPY, PORTALE</h2>
           <p className="__paragraph-normal mt-40">działające szybko, responsywne, miłe dla oka</p>
+          <Link to="contact"  
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration= {500}>
           <button className="btn-big mt-40">NAPISZ DO NAS</button>
+          </Link>
         </div>
         <div className="offer__items">
           <div>
             <img src={ expIco } alt="icon" className="mb-30"/>
             <p className="fw-700">DOŚWIADCZENIE</p>
-            <p className="fw-100">Zapewnimy  wysoką jakość produktu finalnego. Nasi klienci otrzymują produkty które spełniają wszelkie wymagania. Pracujemy z wieloma specjalistami z dziwdziny marketingu, e-commerce czy SEO.</p>
+            <p className="fw-100">Zapewnimy  wysoką jakość produktu finalnego. Nasi klienci otrzymują produkty które spełniają wszelkie wymagania. Pracujemy z wieloma specjalistami z dziedziny marketingu, e-commerce czy SEO.</p>
           </div>
           <div>
             <img src={ helpIco } alt="icon" className="mb-30"/>

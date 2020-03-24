@@ -9,7 +9,7 @@ function Footer(){
   return(
     <>
       <div className="row">
-        <div>
+        <div className="col-lg-4 col-md-3 col-sm-6">
           <img src={Logo} alt="awwwokado logo"/>
           <div className="plr-10">
           <p className="footer__p">Kamil Balda</p>
