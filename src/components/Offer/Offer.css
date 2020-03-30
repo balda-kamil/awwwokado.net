@@ -26,6 +26,10 @@
   padding-right: 70px;
 }
 
+.offer__items p{
+  letter-spacing: 0.65px;
+}
+
 .offer__items img{
   max-height: 60px;
 }

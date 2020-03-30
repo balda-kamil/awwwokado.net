@@ -12,10 +12,11 @@
 
 .quote_paragraph{
   position: relative;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  color: #10256F
+  color: #10256F;
+  letter-spacing: 0.65px;
 }
 
 .quote_author{

@@ -16,7 +16,8 @@ img{
 }
 
 .footer__p{
-  font-weight: 100;
+  font-weight: 300;
+  letter-spacing: .5px;
   font-size: 20px;
   line-height: 24px;
   color: #fff;

@@ -28,17 +28,17 @@ function Offer(){
           <div>
             <img src={ expIco } alt="icon" className="mb-30"/>
             <p className="fw-700">DOŚWIADCZENIE</p>
-            <p className="fw-100">Zapewnimy  wysoką jakość produktu finalnego. Nasi klienci otrzymują produkty które spełniają wszelkie wymagania. Pracujemy z wieloma specjalistami z dziedziny marketingu, e-commerce czy SEO.</p>
+            <p className="fw-300">Zapewnimy  wysoką jakość produktu finalnego. Nasi klienci otrzymują produkty które spełniają wszelkie wymagania. Pracujemy z wieloma specjalistami z dziedziny marketingu, e-commerce czy SEO.</p>
           </div>
           <div>
             <img src={ helpIco } alt="icon" className="mb-30"/>
             <p className="fw-700">POMOC</p>
-            <p className="fw-100">Stałe wspracie programistyczne minimalizuje ryzyko pojawienia się błędów i pozwala cieszyć się z efektów współpracy jeszcze bardziej. W razie jakichkolwiek komplikacji czy pytań jesteśmy do dyspozycji.</p>
+            <p className="fw-300">Stałe wspracie programistyczne minimalizuje ryzyko pojawienia się błędów i pozwala cieszyć się z efektów współpracy jeszcze bardziej. W razie jakichkolwiek komplikacji czy pytań jesteśmy do dyspozycji.</p>
           </div>
           <div>
             <img src={ comIco } alt="icon" className="mb-30"/>
             <p className="fw-700">KOMUNIKACJA</p>
-            <p className="fw-100">Jesteśmy firmą która słucha wizji swoich klientów, aby byla ona zgodna z naszą. Każdą stronę czy platformę tworymy od podstaw, dopasowaną pod Ciebie.</p>
+            <p className="fw-300">Jesteśmy firmą która słucha wizji swoich klientów, aby byla ona zgodna z naszą. Każdą stronę czy platformę tworymy od podstaw, dopasowaną pod Ciebie.</p>
           </div>
         </div>
       </div>

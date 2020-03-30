@@ -65,7 +65,7 @@ footer p, h1, h2, h3, h4, h5, h6, a{
 }
 
 .__light-subtitle{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 54px;
   line-height: 60px;
   letter-spacing: 1.2px;
@@ -94,6 +94,14 @@ footer p, h1, h2, h3, h4, h5, h6, a{
 
 .fw-100{
   font-weight: 100;
+}
+
+.fw-200{
+  font-weight: 200;
+}
+
+.fw-300{
+  font-weight: 300;
 }
 
 .mt-40{
